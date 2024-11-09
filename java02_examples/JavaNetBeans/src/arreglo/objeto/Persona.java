@@ -14,6 +14,14 @@ public class Persona {
         this.edad = edad;
     }
     
+    // Setters
+    public void setNombre(String nombre){
+        this.nombre = nombre;
+    }
+    public void setEdad(int edad){
+        this.edad = edad;        
+    }
+    
     // Getters
     public String getNombre(){
         return this.nombre;
