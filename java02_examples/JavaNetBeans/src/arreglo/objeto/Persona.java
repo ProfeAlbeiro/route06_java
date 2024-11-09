@@ -30,4 +30,10 @@ public class Persona {
         return this.edad;
     }
     
+    // Sobre escribe el método toString() para mostrar los datos en un Arreglo    
+    @Override
+    public String toString(){
+        return "Nombre: " + this.nombre + ". Edad: " + this.edad;
+    }
+    
 }
