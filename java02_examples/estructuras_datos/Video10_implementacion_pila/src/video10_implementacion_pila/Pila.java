@@ -17,8 +17,7 @@ public class Pila {
         } else {
             tope+=1;
             System.out.print("Ingrese el dato: ");
-            pilaNumerica[tope] = sc.nextInt();
-            System.out.println(tope);
+            pilaNumerica[tope] = sc.nextInt();            
         }
     }
     
@@ -37,8 +36,7 @@ public class Pila {
     public void mostrarPila(){
         for (int i = pilaNumerica.length - 1; i >= 0; i--) {
             System.out.println("Datos de la Pila: " + pilaNumerica[i]);
-        }        
-        System.out.println(tope);
+        }                
     }
     
     
