@@ -13,4 +13,9 @@ public class Nodo {
         this.dato = dato;
         this.siguiente = siguiente;
     }
+    
+    public Nodo(String dato){
+        this.dato = dato;
+        this.siguiente = null;
+    }
 }
