@@ -12,10 +12,8 @@ public class NodoArbol {
     public NodoArbol(int valor){
         this.valor = valor;
         this.nodoIzq = null;
-        this.nodoDer = null;
-        
-    }
-    
+        this.nodoDer = null;        
+    }    
     // Se crean los métodos setter y getter
     public int getValor() {
         return valor;

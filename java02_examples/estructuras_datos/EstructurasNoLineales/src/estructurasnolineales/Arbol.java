@@ -11,26 +11,11 @@ public class Arbol {
     }
     
     // Método para pasarle el valor al árbol
-    public void insertar(int valor){
+    public void insertarDato(int valor){
         if (this.inicial == null) {
             this.inicial = new NodoArbol(valor);
         } else {
             this.inicial.insertar(valor);
-        }
-    }
-    
-    // Método para disparar preorden
-    public void dispararPreorden(){
-        this.preorden(this.inicial);
-    }    
-    // Método de preorden
-    public void preorden(NodoArbol nodo){
-        if (nodo == null) {
-            return; // Detiene la recursividad
-        } else {
-            System.out.print(nodo.getValor() + ", ");
-            preorden(nodo.getNodoIzq());
-            preorden(nodo.getNodoDer());
         }
     }
     
@@ -44,10 +29,25 @@ public class Arbol {
             return; // Detiene la recursividad
         } else {
             inorden(nodo.getNodoIzq());
-            System.out.print(nodo.getValor() + ", ");
+            System.out.print(nodo.getValor() + " - ");
             inorden(nodo.getNodoDer());
         }
+    }    
+    // Método para disparar preorden
+    public void dispararPreorden(){
+        this.preorden(this.inicial);
+    }    
+    // Método de preorden
+    public void preorden(NodoArbol nodo){
+        if (nodo == null) {
+            return; // Detiene la recursividad
+        } else {
+            System.out.print(nodo.getValor() + " - ");
+            preorden(nodo.getNodoIzq());
+            preorden(nodo.getNodoDer());
+        }
     }
+    
     // Método para disparar postorden
     public void dispararPostorden(){
         this.postorden(this.inicial);
@@ -59,7 +59,7 @@ public class Arbol {
         } else {
             postorden(nodo.getNodoIzq());
             postorden(nodo.getNodoDer());
-            System.out.print(nodo.getValor() + ", ");
+            System.out.print(nodo.getValor() + " - ");
         }
     }
             

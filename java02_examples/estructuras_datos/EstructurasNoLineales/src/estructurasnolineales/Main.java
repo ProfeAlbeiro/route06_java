@@ -1,30 +1,24 @@
 package estructurasnolineales;
 
-public class Main {
-    
+public class Main {    
     public static void main(String[] args) {
         // Crear objeto arbol
         Arbol arbol = new Arbol();
-        arbol.insertar(43);
-        arbol.insertar(10);
-        arbol.insertar(8);
-        arbol.insertar(54);
-        arbol.insertar(15);
-        arbol.insertar(50);
-        arbol.insertar(53);
-        
+        arbol.insertarDato(43);
+        arbol.insertarDato(10);
+        arbol.insertarDato(8);
+        arbol.insertarDato(54);
+        arbol.insertarDato(15);
+        arbol.insertarDato(50);
+        arbol.insertarDato(53);        
          // Imprimir InOrden
         System.out.println("\nINORDEN:");
-        arbol.dispararInorden();
-        
+        arbol.dispararInorden();        
         // Imprimir PreOrden
         System.out.println("\n\nPREORDEN:");
-        arbol.dispararPreorden();       
-        
+        arbol.dispararPreorden();
         // Imprimir PostOrden
         System.out.println("\n\nPOSTORDEN:");
-        arbol.dispararPostorden();
-        
-    }
-    
+        arbol.dispararPostorden();        
+    }    
 }
