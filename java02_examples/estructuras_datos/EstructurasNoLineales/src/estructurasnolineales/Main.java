@@ -13,13 +13,13 @@ public class Main {
         arbol.insertar(50);
         arbol.insertar(53);
         
-         // Imprimir PreOrden
-        System.out.println("\nPREORDEN:");
-        arbol.dispararPreorden();
-
-        // Imprimir InOrden
-        System.out.println("\n\nINORDEN:");
+         // Imprimir InOrden
+        System.out.println("\nINORDEN:");
         arbol.dispararInorden();
+        
+        // Imprimir PreOrden
+        System.out.println("\n\nPREORDEN:");
+        arbol.dispararPreorden();       
         
         // Imprimir PostOrden
         System.out.println("\n\nPOSTORDEN:");
